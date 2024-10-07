@@ -7,7 +7,9 @@
   "author": "Mark Macneil",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "bulma": "^0.9.3",
@@ -22,6 +24,7 @@
   },
   "dependencies": {
     "flickity": "^2.2.2",
-    "flickity-imagesloaded": "^2.0.0"
+    "flickity-imagesloaded": "^2.0.0",
+    "gh-pages": "^6.1.1"
   }
 }
